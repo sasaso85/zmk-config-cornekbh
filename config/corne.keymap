@@ -82,9 +82,9 @@
     combos {
         compatible = "zmk,combos";
 
-        escape {
-            bindings = <&kp ESCAPE>;
-            key-positions = <13 29>;
+        raycast {
+            bindings = <&kp LG(SPACE)>;
+            key-positions = <15 16>;
         };
 
         delete {
@@ -140,21 +140,9 @@
             layers = <0>;
         };
 
-        plus {
-            bindings = <&kp PLUS>;
-            key-positions = <7 19>;
-            layers = <0>;
-        };
-
         minus {
-            bindings = <&kp KP_MINUS>;
-            key-positions = <31 19>;
-            layers = <0>;
-        };
-
-        underscore {
-            bindings = <&kp UNDER>;
-            key-positions = <30 18>;
+            bindings = <&kp MINUS>;
+            key-positions = <20 21>;
             layers = <0>;
         };
 
@@ -172,14 +160,26 @@
 
         para-less {
             bindings = <&paraless>;
-            key-positions = <20 19>;
+            key-positions = <7 8>;
             layers = <0>;
         };
 
         para-great {
             bindings = <&paragreat>;
-            key-positions = <20 21>;
+            key-positions = <8 9>;
             layers = <0>;
+        };
+
+        copy-m {
+            bindings = <&kp LG(C)>;
+            key-positions = <26 27>;
+            layers = <2>;
+        };
+
+        paste-m {
+            bindings = <&kp LG(V)>;
+            key-positions = <27 28>;
+            layers = <2>;
         };
     };
 
